@@ -38,6 +38,6 @@ if ingredients_list:
 
 # New Section to display smoothiefroot nutrition information
 import requests  
-smoothiefroot_response = requests.get("https://fdc.nal.usda.gov/food-search?query=watermelon")
+smoothiefroot_response = requests.get("https://fdc.nal.usda.gov/food-details/2747675/nutrients")
 # st.text(smoothiefroot_response)
 sf_df = st.dataframe(data=smoothiefroot_response.json(), use_container_width=True)
